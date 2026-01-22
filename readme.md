@@ -4,7 +4,7 @@
 
 Lena is a compact, handmade framework for making tiny games with palette graphics. It's software-rendered, cross-platform and provides artistic constraints that challenge your creativity without limiting your game's size and scope.
 
-It comes with batteries-included palette graphics, palette-blending and other drawing effects, loaders and decoders for image and audio assets, a simple audio interface, and built-in text rendering. It also compiles and runs on:
+It comes with batteries-included palette graphics, palette-blending and other drawing effects, loaders and decoders for image and audio assets, a simple audio interface, and built-in text rendering. It compiles and runs on:
 
 - Windows (Native)
 - macOS (Native)
@@ -12,6 +12,8 @@ It comes with batteries-included palette graphics, palette-blending and other dr
 - WebAssembly (Native)
 
 The core functionality of Lena is implemented from scratch and the whole code base is designed to be extremely legible and hackable. Lena *only* relies on the libraries that ship with the Odin compiler.
+
+In addition to the documentation in this repository, you can browse all historical (and future) versions of the documentation on [Lena's homepage](https://lichendust.com/lena).
 
 ## Library and Structure
 

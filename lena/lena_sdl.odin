@@ -3,8 +3,8 @@
 package lena
 
 import "core:mem"
-import "core:strings"
 import "core:time"
+import "core:strings"
 
 import SDL "vendor:sdl3"
 

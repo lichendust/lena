@@ -132,7 +132,7 @@ init :: proc(title: string, w, h: int, target_framerate: i64 = FPS_AUTO, flags: 
 	ctx.fps   = target_framerate
 	ctx.flags = flags
 
-	ctx.internal_buffer = make([]u8, 1024 * 1024, backing_allocator) // 1MB backing buffer
+	ctx.internal_buffer = make([]u8, 4 * 1024 * 1024, backing_allocator) // 4MB backing buffer
 	mem.arena_init(&ctx.arena, ctx.internal_buffer)
 	ctx.allocator = mem.arena_allocator(&ctx.arena)
 

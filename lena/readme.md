@@ -461,7 +461,7 @@ Convenience values to make easy `when` statements against the platform your game
 ### PALETTE_SIZE
 
 ```odin
-PALETTE_SIZE :: #config(lena_palette, 32)
+PALETTE_SIZE :: #config(LENA_PALETTE, 32)
 ```
 
 Defines how many colours are available in Lena's palette, which must be 1-256 inclusive.
