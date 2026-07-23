@@ -12,8 +12,8 @@ import "core:image/png"
 import "vendor:stb/truetype"
 
 MAJOR :: 0
-MINOR :: 0
-PATCH :: 2
+MINOR :: 1
+PATCH :: 0
 
 IS_WINDOWS :: ODIN_OS == .Windows
 IS_DARWIN  :: ODIN_OS == .Darwin
@@ -111,7 +111,8 @@ Startup_Flags :: bit_set[Startup_Flag]
 Startup_Flag  :: enum u8 {
 	FULLSCREEN,
 	HIDE_CURSOR,
-	HIDE_WINDOW,
+	DEFER_WINDOW,
+	HIDE_WINDOW = DEFER_WINDOW, // @1.0 will be deprecated
 }
 
 Draw_Flags :: bit_set[Draw_Flag]
@@ -132,7 +133,7 @@ init :: proc(title: string, w, h: int, target_framerate: i64 = FPS_AUTO, flags: 
 	ctx.fps   = target_framerate
 	ctx.flags = flags
 
-	ctx.internal_buffer = make([]u8, 4 * 1024 * 1024, backing_allocator) // 4MB backing buffer
+	ctx.internal_buffer = make([]u8, 4 * (w * h + 1024 * 1024), backing_allocator)
 	mem.arena_init(&ctx.arena, ctx.internal_buffer)
 	ctx.allocator = mem.arena_allocator(&ctx.arena)
 
@@ -162,15 +163,18 @@ init :: proc(title: string, w, h: int, target_framerate: i64 = FPS_AUTO, flags: 
 
 	ctx.prev_time = time.now()
 
+	os_update_cursor()
+
+	if .DEFER_WINDOW not_in ctx.flags {
+		os_show_window()
+	}
+
 	return &ctx
 }
 
 step :: proc() -> (f64, bool) #no_bounds_check {
 	free_all(context.temp_allocator)
 
-	if ctx.set_quit {
-		return 0, false
-	}
 	for pixel, index in ctx.screen.pixels {
 		ctx.backbuffer[index] = ctx.palette[pixel]
 	}
@@ -190,7 +194,7 @@ step :: proc() -> (f64, bool) #no_bounds_check {
 	#force_inline os_step()
 	#force_inline audio_step(ctx.delta_time)
 
-	return ctx.delta_time, true
+	return ctx.delta_time, !ctx.set_quit
 }
 
 quit :: proc() {
@@ -208,20 +212,20 @@ destroy :: proc() {
 	delete(ctx.internal_buffer)
 }
 
-show_window :: proc() {
-	ctx.flags -= {.HIDE_WINDOW}
+show_window :: #force_inline proc() {
+	ctx.flags -= {.DEFER_WINDOW}
 	os_show_window()
 }
 
-get_context :: proc() -> ^Context {
+get_context :: #force_inline proc() -> ^Context {
 	return &ctx
 }
 
-get_screen :: proc() -> Image {
+get_screen :: #force_inline proc() -> Image {
 	return ctx.screen
 }
 
-set_title :: proc(text: string) {
+set_title :: #force_inline proc(text: string) {
 	os_set_title(text)
 }
 

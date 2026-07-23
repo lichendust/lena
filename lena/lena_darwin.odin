@@ -113,7 +113,7 @@ os_init :: proc(title: string) {
 	screen := NS.Screen_mainScreen()
 
 	{
-		mon := objc_send(NS.Rect, screen, "frame")
+		mon := screen->frame()
 
 		monitor_w := cast(int) mon.width
 		monitor_h := cast(int) mon.height
@@ -135,24 +135,25 @@ os_init :: proc(title: string) {
 		windowWillClose = proc(n: ^NS.Notification) {
 			ctx.set_quit = true
 		},
+		windowShouldClose = proc(sender: ^NS.Window) -> NS.BOOL {
+			return !ctx.set_quit
+		},
 		windowDidResize = proc(n: ^NS.Notification) {
 			// hack because ButtonUp events don't fire when releasing
 			// a resize, so we just clear all the buttons
 			for &state in ctx.mouse_state do state &~= KEY_STATE_HELD
 		},
 	}, "lena_window_delegate", context)
+
 	ctx.nswindow->setDelegate(wd)
-
-	objc_send(nil, ctx.nswindow, "center")
-
+	ctx.nswindow->center()
 	ctx.nsapp->finishLaunching()
 
 	NEAREST  = NS.String.alloc()->initWithOdinString("nearest")
 	RGBSPACE = NS.String.alloc()->initWithOdinString("NSDeviceRGBColorSpace")
 
 	view := ctx.nswindow->contentView()
-	scaleProportionallyToFit :: NS.Integer(1)
-	objc_send(nil, view, "setLayerContentsPlacement:", scaleProportionallyToFit)
+	objc_send(nil, view, "setLayerContentsPlacement:", NS.Integer(1)) // scaleProportionallyToFit
 
 	step := ctx.fps
 	if step == FPS_AUTO {
@@ -164,12 +165,6 @@ os_init :: proc(title: string) {
 	}
 
 	os_set_title(title)
-
-	ctx.cursor_visible = true
-
-	if .HIDE_CURSOR in ctx.flags {
-		os_update_cursor()
-	}
 	if .FULLSCREEN in ctx.flags {
 		os_update_fullscreen()
 	}
@@ -320,7 +315,7 @@ os_destroy :: proc() {
 }
 
 os_update_fullscreen :: proc() {
-	objc_send(nil, ctx.nswindow, "toggleFullScreen:")
+	ctx.nswindow->toggleFullScreen(nil)
 }
 
 /*

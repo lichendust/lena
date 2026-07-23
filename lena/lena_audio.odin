@@ -1,7 +1,6 @@
 #+build !js
 package lena
 
-import "base:runtime"
 import "vendor:miniaudio"
 
 CHANNEL_COUNT :: #config(LENA_CHANNEL_COUNT, 2)
@@ -162,8 +161,6 @@ audio_step :: proc(delta_time: f64) {
 
 @private
 data_callback :: proc "c" (device: ^miniaudio.device, output, input: rawptr, frame_count: u32) {
-	context = runtime.default_context()
-
 	TEMP_SIZE :: 4096
 
 	frame_count   := cast(u64) frame_count

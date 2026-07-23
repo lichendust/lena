@@ -54,12 +54,7 @@ os_init :: proc(title: string) {
 		ctx.step_time = time.Second / cast(time.Duration) step
 	}
 
-	os_update_cursor()
 	os_update_fullscreen()
-
-	if .HIDE_WINDOW not_in ctx.flags {
-		os_show_window()
-	}
 }
 
 os_destroy :: proc() {
@@ -203,7 +198,7 @@ clear_window :: proc() {
 
 	brush := windows.CreateSolidBrush(x ~ 0xff000000)
 	windows.FillRect(hdc, &ps.rcPaint, brush)
-	windows.DeleteObject(cast(windows.HGDIOBJ) brush)
+	windows.DeleteObject(auto_cast brush)
 	windows.EndPaint(ctx.hwnd, &ps)
 }
 
@@ -223,8 +218,8 @@ os_update_fullscreen :: proc() {
 		cx, cy := info.rcMonitor.left,   info.rcMonitor.top
 		wd, hg := info.rcMonitor.right - info.rcMonitor.left, info.rcMonitor.bottom - info.rcMonitor.top
 
-		windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_STYLE,   cast(windows.LONG_PTR) 0)
-		windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_EXSTYLE, cast(windows.LONG_PTR) 0)
+		windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_STYLE,   auto_cast 0)
+		windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_EXSTYLE, auto_cast 0)
 
 		windows.SetWindowPos(ctx.hwnd, nil, cx, cy, wd, hg, windows.SWP_SHOWWINDOW if .HIDE_WINDOW not_in ctx.flags else 0)
 		return
@@ -250,8 +245,8 @@ os_update_fullscreen :: proc() {
 	sx := (cast(i32) monitor_w - sw) / 2
 	sy := (cast(i32) monitor_h - sh) / 2
 
-	windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_STYLE,   cast(windows.LONG_PTR) WINDOWED_STYLE)
-	windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_EXSTYLE, cast(windows.LONG_PTR) WINDOWEX_STYLE)
+	windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_STYLE,   auto_cast WINDOWED_STYLE)
+	windows.SetWindowLongPtrW(ctx.hwnd, windows.GWL_EXSTYLE, auto_cast WINDOWEX_STYLE)
 
 	windows.SetWindowPos(ctx.hwnd, nil, sx, sy, sw, sh, windows.SWP_SHOWWINDOW if .HIDE_WINDOW not_in ctx.flags else 0)
 }

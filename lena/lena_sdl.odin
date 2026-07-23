@@ -30,12 +30,7 @@ os_init :: proc(title: string) {
 		SDL.SetRenderVSync(ctx.sdl_renderer, 1)
 	}
 
-	os_update_cursor()
 	os_update_fullscreen()
-
-	if .HIDE_WINDOW not_in ctx.flags {
-		os_show_window()
-	}
 }
 
 os_destroy :: proc() {
