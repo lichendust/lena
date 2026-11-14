@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"lsp_format_on_save": false
+	},
+	"build_systems": [
+		{
+			"name": "Run Lena Demo",
+			"working_dir": "$project_path",
+			"cmd": [
+				"odin",
+				"run",
+				"demo.odin",
+				"-file"
+			]
+		}
+	]
+}

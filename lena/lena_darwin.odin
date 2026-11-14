@@ -6,7 +6,7 @@ import "core:math"
 import "core:time"
 import "base:intrinsics"
 
-import NS "core:sys/darwin/Foundation"
+import NS "vendor:darwin/AppKit"
 
 /*
 	[On Objective-C Interfacing]
@@ -115,8 +115,8 @@ os_init :: proc(title: string) {
 	{
 		mon := screen->frame()
 
-		monitor_w := cast(int) mon.width
-		monitor_h := cast(int) mon.height
+		monitor_w := cast(int) mon.size.width
+		monitor_h := cast(int) mon.size.height
 
 		scale := cast(f32) (monitor_w > monitor_h ? monitor_h / ctx.screen.h : monitor_w / ctx.screen.w) / 5
 
@@ -181,8 +181,8 @@ os_step :: proc() {
 
 	bounds := ctx.nswindow->contentView()->bounds()
 
-	ctx.window.w = cast(int) bounds.width
-	ctx.window.h = cast(int) bounds.height
+	ctx.window.w = cast(int) bounds.size.width
+	ctx.window.h = cast(int) bounds.size.height
 
 	for {
 		event := ctx.nsapp->nextEventMatchingMask(NS.EventMaskAny, nil, NS.DefaultRunLoopMode, true)
@@ -193,8 +193,8 @@ os_step :: proc() {
 		frame := ctx.nswindow->contentView()->bounds()
 		point := objc_send(NS.Point, ctx.nswindow, "mouseLocationOutsideOfEventStream")
 
-		point.y = bounds.height - point.y
-		mouse_inside := point.x > 0 && point.y > 0 && point.x < frame.width && point.y < frame.height
+		point.y = bounds.size.height - point.y
+		mouse_inside := point.x > 0 && point.y > 0 && point.x < frame.size.width && point.y < frame.size.height
 
 		_type := event->type()
 		#partial switch _type {

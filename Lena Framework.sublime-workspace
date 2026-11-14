@@ -1,0 +1,1044 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lsp_form",
+				"\"lsp_format_on_save\""
+			],
+			[
+				"load",
+				"load_config(filename: string) -> (_: Config, _: Load_Config_Error)"
+			],
+			[
+				"free",
+				"free_all"
+			],
+			[
+				"config",
+				"config_error"
+			],
+			[
+				"load_co",
+				"load_config(filename: string) -> (_: Config, _: Load_Config_Error)"
+			],
+			[
+				"unma",
+				"unmarshal(data: []byte, ptr: ^$T, spec := DEFAULT_SPECIFICATION, allocator := context.allocator) -> Unmarshal_Error"
+			],
+			[
+				"c",
+				"config_data_err"
+			],
+			[
+				"type",
+				"type_of(x: expr) -> type"
+			],
+			[
+				"size",
+				"size_of($T: typeid) -> int"
+			],
+			[
+				"print",
+				"printfln(fmt: string, args: ..any, flush := true) -> (bytes_written: int)"
+			],
+			[
+				"rand",
+				"random_thing"
+			],
+			[
+				"len",
+				"len(array: Array_Type) -> int"
+			],
+			[
+				"calle",
+				"caller_location"
+			],
+			[
+				"are",
+				"arena_allocator(arena: ^Arena) -> Allocator"
+			],
+			[
+				"arena_init",
+				"arena_init_static(arena: ^Arena, reserved: uint = DEFAULT_ARENA_STATIC_RESERVE_SIZE, commit_size: uint = DEFAULT_ARENA_STATIC_COMMIT_SIZE) -> (err: Allocator_Error)"
+			],
+			[
+				"Are",
+				"arena_alloc_example"
+			],
+			[
+				"str",
+				"strings"
+			],
+			[
+				"imp",
+				"import"
+			],
+			[
+				"alloca",
+				"allocation_map"
+			],
+			[
+				"DEBU",
+				"ODIN_DEBUG"
+			],
+			[
+				"u64",
+				"uint64_max(n: u64, gen := context.random_generator) -> (val: u64)"
+			],
+			[
+				"flo",
+				"float64(gen := context.random_generator) -> (val: f64)"
+			],
+			[
+				"default_ra",
+				"default_random_generator(state: ^Default_Random_State = nil) -> Random_Generator"
+			],
+			[
+				"des",
+				"destroy_file_logger(log: Logger, allocator := context.allocator)"
+			],
+			[
+				"do_",
+				"do_work2()"
+			],
+			[
+				"prin",
+				"println(args: ..any, sep := \" \", flush := true) -> int"
+			],
+			[
+				"slots",
+				"slots_iterator(iter: ^Slots_Iterator) -> (val: Slot, idx: int, cond: bool)"
+			],
+			[
+				"con",
+				"continue"
+			],
+			[
+				"SlotI",
+				"Slots_Iterator"
+			],
+			[
+				"Slot",
+				"Slots_Iterator"
+			],
+			[
+				"my",
+				"my_slice"
+			],
+			[
+				"first",
+				"first_20_clone"
+			],
+			[
+				"pri",
+				"println(args: ..any, sep := \" \", flush := true) -> int"
+			],
+			[
+				"slice",
+				"slice_end"
+			],
+			[
+				"typei",
+				"typeid_of($T: typeid) -> typeid"
+			],
+			[
+				"dyn",
+				"dyn_array_1"
+			],
+			[
+				"unoe",
+				"unordered_remove"
+			],
+			[
+				"defaul",
+				"default_context() -> Context"
+			],
+			[
+				"run",
+				"runtime"
+			],
+			[
+				"leng",
+				"length_float3(v: [3]f32) -> f32"
+			],
+			[
+				"stri",
+				"string"
+			],
+			[
+				"nu",
+				"num_pointer"
+			],
+			[
+				"num",
+				"num_pointer"
+			],
+			[
+				"an",
+				"another_cat"
+			],
+			[
+				"nume",
+				"number_pointer"
+			],
+			[
+				"time",
+				"time"
+			],
+			[
+				"Shap",
+				"Shape_Square"
+			],
+			[
+				"f32_va",
+				"f32_val_ok"
+			],
+			[
+				"Pers",
+				"Person_Data"
+			],
+			[
+				"Per",
+				"Person_Data"
+			],
+			[
+				"type_",
+				"type_of(x: expr) -> type"
+			],
+			[
+				"Person",
+				"Person_Data"
+			],
+			[
+				"Perso",
+				"PersonStats"
+			],
+			[
+				"lsp_",
+				"\"lsp_format_on_save\""
+			],
+			[
+				"sc",
+				"scr_texture"
+			],
+			[
+				"UnloadTe",
+				"UnloadTexture(texture: Texture2D)"
+			],
+			[
+				"can",
+				"canvas_h"
+			],
+			[
+				"canvas_",
+				"canvas_w"
+			],
+			[
+				"LoadText",
+				"LoadTextureFromImage(image: Image) -> Texture2D"
+			],
+			[
+				"sce",
+				"screen_width"
+			],
+			[
+				"init",
+				"InitWindow(width, height: c.int, title: cstring)"
+			],
+			[
+				"ra",
+				"raylib"
+			],
+			[
+				"CA",
+				"CANVAS_WIDTH"
+			],
+			[
+				"get_ca",
+				"get_canvas_size (import canvas)"
+			],
+			[
+				"ca",
+				"canvas_w"
+			],
+			[
+				"hal",
+				"half_width"
+			],
+			[
+				"ha",
+				"half_height"
+			],
+			[
+				"clos",
+				"closest_t"
+			],
+			[
+				"close",
+				"closest_t"
+			],
+			[
+				"_inte",
+				"_intersects"
+			],
+			[
+				"sphe",
+				"_spheres"
+			],
+			[
+				"Ve",
+				"Vec3"
+			],
+			[
+				"VEc",
+				"Vec3"
+			],
+			[
+				"sqrt",
+				"sqrt (import math)"
+			],
+			[
+				"inf",
+				"inf (import math)"
+			],
+			[
+				"dot",
+				"dot_3"
+			],
+			[
+				"data",
+				"dataclass (import dataclasses)"
+			],
+			[
+				"div",
+				"div_2"
+			],
+			[
+				"Vec",
+				"Vec3"
+			],
+			[
+				"Divi",
+				"ZeroDivisionError"
+			],
+			[
+				"namedtu",
+				"namedtuple (import collections)"
+			],
+			[
+				"_",
+				"_vector"
+			],
+			[
+				"Po",
+				"Point3"
+			],
+			[
+				"_scree",
+				"_screen_image"
+			],
+			[
+				"WI",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"WIND",
+				"WINDOW_WIDTH"
+			],
+			[
+				"WINDO",
+				"WINDOW_HEIGHT (import config)"
+			],
+			[
+				"CAN",
+				"CANVAS_WIDTH"
+			],
+			[
+				"WindowSta",
+				"set_window_state"
+			],
+			[
+				"_scr",
+				"_screen_texture"
+			],
+			[
+				"canva",
+				"canvas_rect"
+			],
+			[
+				"VIEW",
+				"VIEWPORT_HEIGHT (import config)"
+			],
+			[
+				"W",
+				"WINDOW_HEIGHT (import config)"
+			],
+			[
+				"window_",
+				"get_window_handle"
+			],
+			[
+				"WINDOW",
+				"WINDOW_WIDTH (import config)"
+			],
+			[
+				"BLA",
+				"BLANK"
+			],
+			[
+				"scree",
+				"screen_y"
+			],
+			[
+				"bo",
+				"bounded_y"
+			],
+			[
+				"WIN",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"Wi",
+				"WINDOW_WIDTH"
+			],
+			[
+				"_scre",
+				"_screen_texture"
+			],
+			[
+				"get_",
+				"get_fps"
+			],
+			[
+				"VIEWPO",
+				"VIEWPORT_WIDTH (import config)"
+			],
+			[
+				"WINDOW_",
+				"WINDOW_WIDTH (import config)"
+			],
+			[
+				"colorfro",
+				"color_from_normalized"
+			],
+			[
+				"draw_texture",
+				"draw_texture_ex"
+			],
+			[
+				"load_text",
+				"load_texture_from_image"
+			],
+			[
+				"gen",
+				"gen_image_color"
+			],
+			[
+				"CAme",
+				"CameraMode"
+			],
+			[
+				"CAME",
+				"CameraProjection"
+			],
+			[
+				"Came",
+				"Camera3D"
+			],
+			[
+				"_pars",
+				"_parse_tag_data"
+			],
+			[
+				"ifd",
+				"ifds"
+			],
+			[
+				"_parse",
+				"_parse_gps_data"
+			],
+			[
+				"has",
+				"has_gps_data"
+			],
+			[
+				"si",
+				"signed"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"de",
+				"den"
+			],
+			[
+				"tag",
+				"tag_count"
+			],
+			[
+				"S",
+				"SRATIONAL"
+			],
+			[
+				"rt",
+				"rstrip"
+			],
+			[
+				"U",
+				"UTF"
+			],
+			[
+				"Tag",
+				"TagType"
+			],
+			[
+				"TagTy",
+				"TagType"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"ta",
+				"tag_value"
+			],
+			[
+				"le",
+				"length"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: Up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: Lise",
+				"Package Control: List Packages"
+			],
+			[
+				"Install Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Forma",
+				"LSP: Format File"
+			],
+			[
+				"Remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"RemovePa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"LSP Form",
+				"LSP: Format File"
+			],
+			[
+				"restart",
+				"LSP: Restart Server"
+			],
+			[
+				"Form",
+				"LSP: Format File"
+			],
+			[
+				"forma",
+				"LSP: Format File"
+			],
+			[
+				"LSP For",
+				"LSP: Format File"
+			],
+			[
+				"LSP Resta",
+				"LSP: Restart Server"
+			],
+			[
+				"Package Control Upda",
+				"Package Control: Upgrade All Packages"
+			],
+			[
+				"Restart",
+				"LSP: Restart Server"
+			],
+			[
+				"Package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"package Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"LSP: Resta",
+				"LSP: Restart Server"
+			],
+			[
+				"LSP: Re",
+				"LSP: Restart Server"
+			],
+			[
+				"LSP Reste",
+				"Preferences: LSP Settings"
+			],
+			[
+				"Preferences",
+				"Preferences: Settings"
+			],
+			[
+				"Package Settings",
+				"Preferences: Package Control Settings"
+			],
+			[
+				"LSP se",
+				"Preferences: LSP Server Configurations"
+			],
+			[
+				"InstallPa",
+				"Package Control: Install Package"
+			],
+			[
+				"Color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Theme",
+				"UI: Customize Theme"
+			],
+			[
+				"Arithe",
+				"Arithmetic"
+			],
+			[
+				"Bros",
+				"Preferences: Browse Packages"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Select Theme",
+				"UI: Select Theme"
+			],
+			[
+				"Select Col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Select C",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+			"sublime.log_input(True)",
+			"320/240",
+			"ll",
+			"l",
+			"l[1:2] = [4]",
+			"ll",
+			"l",
+			"ll",
+			"ll is l",
+			"l[:] = [1, 2, 3]",
+			"ll = l",
+			"l",
+			"l[:] = [4, 5, 6]",
+			"l",
+			"l = [1, 2, 3]",
+			"0 == 0.0",
+			"int(1.2)",
+			"1024/768",
+			"5/4",
+			"4/3",
+			"1024/768",
+			"320/240",
+			"1280/1024",
+			"0 > -1 > 2",
+			"768/240",
+			"1024/320",
+			"print(sys.path)",
+			"import sys",
+			"sublime.version()",
+			"version()",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/okozak/my-projects/odin/lena"
+	],
+	"file_history":
+	[
+		"/Users/okozak/my-projects/odin/cocoa-test/main.odin",
+		"/Users/okozak/my-projects/odin/cocoa-test/Cocoa Window Test.sublime-project",
+		"/Users/okozak/my-projects/odin/learn/16_error_handling.odin",
+		"/Users/okozak/my-projects/odin/learn/15_bit_related_types.odin",
+		"/Users/okozak/my-projects/odin/learn/14_parapoly.odin",
+		"/Users/okozak/my-projects/odin/learn/05_pointers.odin",
+		"/Users/okozak/my-projects/odin/learn/06_procedures.odin",
+		"/Users/okozak/my-projects/odin/learn/config.json",
+		"/Users/okozak/my-projects/odin/learn/08_containers.odin",
+		"/opt/homebrew/Cellar/ols/2026-10/share/ols/builtin/builtin.odin",
+		"/Users/okozak/my-projects/odin/learn/Learn Odin.sublime-project",
+		"/Users/okozak/my-projects/odin/learn/odinfmt.json",
+		"/Users/okozak/my-projects/odin/learn/13_arena_alloc.odin",
+		"/Users/okozak/my-projects/odin/learn/04_unions.odin",
+		"/Users/okozak/my-projects/odin/learn/12_tracking_alloc.odin",
+		"/Users/okozak/my-projects/odin/learn/11_context.odin",
+		"/opt/homebrew/Cellar/odin/2026-10_1/libexec/base/runtime/core_builtin.odin",
+		"/opt/homebrew/Cellar/ols/2026-10/share/ols/builtin/intrinsics.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/core/mem/allocators.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/core/mem/mem.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/base/runtime/core.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/core/mem/virtual/arena.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/core/mem/virtual/virtual.odin",
+		"/opt/homebrew/Cellar/odin/2026-10/libexec/base/runtime/core_builtin.odin",
+		"/Users/okozak/my-projects/odin/learn/03_enums.odin",
+		"/opt/homebrew/Cellar/odin/2026-09/libexec/core/math/rand/rand.odin",
+		"/opt/homebrew/Cellar/odin/2026-09/libexec/base/runtime/random_generator.odin",
+		"/Users/okozak/my-projects/odin/learn/log.txt",
+		"/opt/homebrew/Cellar/odin/2026-09/libexec/base/runtime/random_generator_chacha8.odin",
+		"/Users/okozak/my-projects/odin/learn/12_context_logger.odin",
+		"/Users/okozak/my-projects/odin/learn/07_memory.odin",
+		"/Users/okozak/my-projects/odin/learn/10_strings.odin",
+		"/Users/okozak/my-projects/odin/learn/09_iterators.odin",
+		"/Users/okozak/my-projects/odin/ostep/OSTEP Book.sublime-project",
+		"/opt/homebrew/Cellar/odin/2026-08/libexec/base/runtime/core.odin",
+		"/opt/homebrew/Cellar/ols/2026-06/share/ols/builtin/intrinsics.odin",
+		"/opt/homebrew/Cellar/odin/2026-08/libexec/core/fmt/fmt.odin",
+		"/Users/okozak/my-projects/odin/learn/11_utf.odin",
+		"/opt/homebrew/Cellar/odin/2026-07a/libexec/core/unicode/utf8/utf8.odin",
+		"/opt/homebrew/Cellar/odin/2026-07a/libexec/core/c/c.odin",
+		"/Users/okozak/my-projects/odin/learn/02_structs.odin",
+		"/opt/homebrew/Cellar/odin/2026-05/libexec/base/runtime/core_builtin.odin",
+		"/opt/homebrew/Cellar/odin/2026-05/libexec/base/runtime/internal.odin",
+		"/opt/homebrew/Cellar/ols/2026-05/share/ols/builtin/builtin.odin",
+		"/opt/homebrew/Cellar/odin/2026-05/libexec/base/runtime/core.odin",
+		"/Users/okozak/my-projects/odin/learn/01_variable_example.odin",
+		"/Users/okozak/my-projects/odin/learn/04_unions-time.S",
+		"/Users/okozak/my-projects/odin/learn/hello.odin",
+		"/Users/okozak/my-projects/odin/learn/learn.sublime-project",
+		"/opt/homebrew/Cellar/odin/2026-05/libexec/core/fmt/fmt_os.odin",
+		"/Users/okozak/my-projects/odin/rlib/main.odin",
+		"/Users/okozak/my-projects/odin/rlib/rlib.sublime-project",
+		"/Users/okozak/my-projects/odin/rlib/odinfmt.json",
+		"/opt/homebrew/Cellar/odin/2026-05/libexec/vendor/raylib/raylib.odin",
+		"/Users/okozak/my-projects/clang/raylib-test/Makefile",
+		"/Users/okozak/my-projects/clang/raylib-test/main.c",
+		"/Users/okozak/my-projects/python/raylib-test/main.c",
+		"/Users/okozak/my-projects/python/raylib-test/Makefile",
+		"/Users/okozak/my-projects/python/raylib-test/algebra.py",
+		"/Users/okozak/my-projects/python/raylib-test/canvas.py",
+		"/Users/okozak/my-projects/python/raylib-test/tracer.py",
+		"/Users/okozak/my-projects/python/raylib-test/main.py",
+		"/Users/okozak/my-projects/python/raylib-test/.venv/lib/python3.14/site-packages/pyray/__init__.pyi",
+		"/Users/okozak/.cache/ty/vendored/typeshed/c03c2b926422c82ab680d27f3ad2491845000802/stdlib/builtins.pyi",
+		"/Users/okozak/my-projects/python/raylib-test/algebra/_vector.py",
+		"/Users/okozak/my-projects/python/raylib-test/algebra/_point.py",
+		"/Users/okozak/my-projects/python/raylib-test/algebra/__init__.py",
+		"/Users/okozak/my-projects/python/raylib-test/tracer/__init__.py",
+		"/Users/okozak/my-projects/python/raylib-test/config.py",
+		"/Users/okozak/my-projects/python/raylib-test/raylib-test.sublime-project",
+		"/Users/okozak/my-projects/python/image-meta/main.py",
+		"/Users/okozak/my-projects/python/image-meta/exif/_functions.py",
+		"/Users/okozak/my-projects/python/image-meta/exif/_types.py",
+		"/Users/okozak/my-projects/python/image-meta/exif/_constants.py",
+		"/Users/okozak/my-projects/python/image-meta/image-meta.sublime-project",
+		"/Users/okozak/my-projects/python/image-meta/pyproject.toml",
+		"/Users/okozak/my-projects/python/image-meta/.gitignore",
+		"/Users/okozak/my-projects/python/image-meta/exif/__init__.py",
+		"/Users/okozak/my-projects/python/image-meta/exif/constants.py",
+		"/Users/okozak/my-projects/zig/zcat/src/main.zig",
+		"/Users/okozak/my-projects/zig/zcat/zcat.sublime-project",
+		"/Users/okozak/my-projects/python/tmdb-app/tmdb-app.py",
+		"/Users/okozak/my-projects/python/tmdb-app/src/app.py",
+		"/Users/okozak/my-projects/python/tmdb-app/.gitignore",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/urls.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/views.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/templates/learning_logs/base.html",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/templates/learning_logs/index.html",
+		"/Users/okozak/my-projects/python-book/learning_log/ll_project/urls.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/admin.py",
+		"/Users/okozak/my-projects/python-book/learning_log/ll_project/settings.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/models.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/migrations/0001_initial.py",
+		"/Users/okozak/my-projects/python-book/learning_log/learning_logs/__init__.py",
+		"/Users/okozak/my-projects/python-book/learning_log/.gitignore",
+		"/Users/okozak/my-projects/python-book/plot/python_repos.py",
+		"/Users/okozak/my-projects/python-book/plot/eq_explore_data.py",
+		"/Users/okozak/my-projects/python-book/plot/death_valley_highs.py",
+		"/Users/okozak/my-projects/python-book/plot/sitka_highs.py",
+		"/Users/okozak/my-projects/python-book/plot/plot.sublime-project",
+		"/Users/okozak/my-projects/python-book/plot/die.py",
+		"/Users/okozak/my-projects/python-book/plot/die_visual.py",
+		"/Users/okozak/my-projects/python-book/plot/dice_visual.py",
+		"/Users/okozak/my-projects/python-book/plot/random_walk.py",
+		"/Users/okozak/my-projects/python-book/plot/scatter_squares.py",
+		"/Users/okozak/my-projects/python-book/plot/mpl_squares.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/macos_deps.md",
+		"/Users/okozak/my-projects/python-book/alien_invasion/alien_invasion.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/alien_invasion.sublime-project",
+		"/Users/okozak/my-projects/python-book/alien_invasion/bullet.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/ship.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/settings.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/alien.py",
+		"/Users/okozak/my-projects/python-book/alien_invasion/.gitignore",
+		"/Users/okozak/my-projects/python-book/alien_invasion/mscos_deps.md",
+		"/Users/okozak/my-projects/python-book/ch-7/parrot.py",
+		"/Users/okozak/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/Users/okozak/work/cd/monolith/htdocs/js/components/3rdparty-ace/lib/theme/textmate.js",
+		"/Users/okozak/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/Users/okozak/work/silkway/api-documentation/source/includes/event_type_model.md.erb",
+		"/Users/okozak/my-projects/node/option-monad/lib/option.js",
+		"/Users/okozak/my-projects/lua/digits/main.lua",
+		"/Users/okozak/my-projects/lua/pprint.lua"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "Odin Run!",
+	"project": "Lena Framework.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"05_pointers.odin"
+			],
+			[
+				"fmt",
+				"odinfmt.json"
+			],
+			[
+				"13",
+				"13_arena_alloc.odin"
+			],
+			[
+				"views.",
+				"learning_logs/views.py"
+			],
+			[
+				"urls.",
+				"ll_project/urls.py"
+			],
+			[
+				"admin.py",
+				"learning_logs/admin.py"
+			],
+			[
+				"initial",
+				"learning_logs/migrations/0001_initial.py"
+			],
+			[
+				"settin",
+				"ll_project/settings.py"
+			],
+			[
+				".giti",
+				".gitignore"
+			],
+			[
+				"md",
+				"macos_deps.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/my-projects/odin/learn/Learn Odin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 54.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"lsp_show_inlay_hints": false
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

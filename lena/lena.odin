@@ -322,9 +322,8 @@ create_image_from_png :: proc(blob: []u8, allocator := context.allocator) -> Ima
 		return {}
 	}
 
-	dat := bytes.buffer_to_bytes(&the_png.pixels)
 	img := create_image(the_png.width, the_png.height, allocator)
-	copy(img.pixels, dat)
+	copy(img.pixels, the_png.pixels[:])
 
 	return img
 }
